@@ -1,0 +1,36 @@
+Project Title: Number Guessed AI Agent
+
+Description:  
+This Python project, titled "Number Guessed AI Agent," demonstrates advanced concepts in Object-Oriented Programming (OOP) and file handling. The project is organized into multiple classes to ensure modularity, reusability, and scalability:
+GameDataHandler Class: Manages all file operations, including creating, reading, and writing game results to a file named game_results.txt. This class encapsulates file handling logic to ensure data persistence and clean code structure.
+•  Game Class: Serves as a base class providing a blueprint for any game type. It defines common attributes and methods such as play() (to be implemented by subclasses) and display_results() for showing the game history.
+•  NumberGuessedAIAgent Class: Inherits from the Game class and implements the core logic for a number guessing game. It generates a random number between 1 and 100 and prompts the user to guess it, providing hints based on user input. The results are saved using the GameDataHandler
+AdvancedGame Class: An extension of NumberGuessedAIAgent, this class introduces additional features like hints (e.g., whether the number is even or odd) after every few wrong attempts. It demonstrates inheritance and method overriding, enhancing the user experience.
+
+Key Enhancements and Concepts:
+
+1.Multiple Classes for Better Organization:
+oGameDataHandler: Responsible for all file operations, ensuring the separation of concerns.
+oGame: A base class that outlines the basic structure of a game.
+oNumberGuessedAIAgent: A derived class from Game that implements the number guessing game.
+oAdvancedGame: An advanced version of the NumberGuessedAIAgent that adds more features, demonstrating inheritance and polymorphism.
+
+2.Inheritance and Polymorphism:
+oThe NumberGuessedAIAgent class inherits from Game, and AdvancedGame inherits from NumberGuessedAIAgent. This demonstrates the "is-a" relationship and how a derived class can override and extend methods.
+
+3.Encapsulation and Abstraction:
+oThe file handling and game logic are encapsulated within classes and methods, ensuring the code is modular and easier to manage.
+
+4.File Handling:
+oThe GameDataHandler class ensures robust file handling, including checking for file existence, reading results, and appending new results.
+
+5.Hints Feature in AdvancedGame:
+oThe advanced version of the game includes a hint system that uses additional class properties and methods to provide the user with hints, enhancing the game experience.
+
+6.Clear and Professional Code Structure:
+oEach class and method is documented, and the code is organized to follow clean code principles, making it suitable for a professional project or an exam submission.
+  Benefits of This Approach
+•Scalability: The design allows for easy addition of new game types or features.
+•Maintainability: The modular approach makes it easier to debug, test, and enhance.
+•Extensibility: New classes or features can be added with minimal impact on existing code.
+
